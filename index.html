@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Event Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Event Registration</h2>
+  <form onsubmit="register(event)" onreset="clearMessage()">
+    <input id="name" placeholder="Full Name">
+    <input id="email" placeholder="Email Address">
+    <input id="phone" placeholder="Phone (10 digits)">
+    <select id="gender">
+      <option value="">Gender</option>
+      <option>Male</option><option>Female</option><option>Other</option>
+    </select>
+    <input id="college" placeholder="College Name">
+    <input id="dept" placeholder="Department">
+    <select id="year">
+      <option value="">Year of Study</option>
+      <option>1</option><option>2</option><option>3</option><option>4</option>
+    </select>
+    <select id="event">
+      <option value="">Select Event</option>
+      <option>Hackathon</option><option>Quiz</option><option>Paper Presentation</option>
+    </select>
+    <button type="submit">Register</button>
+    <button type="reset">Reset</button>
+  </form>
+  <p id="msg"></p>
+  <script src="script.js"></script>
+</body>
+</html>
